@@ -396,7 +396,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -404,6 +404,8 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 }
 
 p {
@@ -614,7 +616,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: white;
 }
 
 a:visited {
@@ -622,7 +624,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: white;
 }
 
 a:focus {
@@ -835,6 +837,100 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.menu {
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    right: 0;
+    z-index: 100;
+		font-family: 'Oswald', sans-serif;
+		letter-spacing: 3px;
+		font-size: 15px;
+		text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: transform(0.2s), transform(0.2s);
+    transition: transform(0.2s);}
+
+.menu a {
+	color: #ffffff;
+}
+
+.menu a:hover {
+	color: #b7b7b7;
+	text-decoration: none;
+}
+
+.menu-item {
+    float: left;
+    margin-right: 30px;
+}
+
+.contenedorabout {
+	max-width: 800px;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	font-size: 15px;
+	display:table; }
+
+.about {
+	vertical-align:middle;
+	display: table-cell;}
+
+.nombreproyecto{
+	margin: 5px 0px 100px 0px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+.footer {
+	background-color: #3b3b3b;
+	min-height: 500px;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	line-height: 2.5;
+	padding-top: 80px;
+	font-size: 0.9em;
+
+}
+
+.titulo {
+	text-transform: uppercase;
+		font-size: 1.2em;
+}
+
+.titulo::before {
+	position: absolute;
+	width: 15px;
+	height: 2px;
+	margin-top: -10px;
+	background: #ffffff;
+	content: '';
+}
+
+.footer a {
+    color: #b7b7b7;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+		text-decoration: underline dotted;
+}
+
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
