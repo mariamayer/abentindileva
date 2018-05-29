@@ -839,13 +839,12 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .menu {
     position: fixed;
-    left: 50%;
-    top: 5%;
+    top: 10%;
     right: 0;
     z-index: 100;
 		font-family: 'Oswald', sans-serif;
 		letter-spacing: 3px;
-		font-size: 15px;
+		font-size: 0.8em;
 		text-transform: uppercase;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -871,14 +870,26 @@ a:hover, a:active {
     margin-right: 30px;
 }
 
+.single .menu a {
+	color: #3b3b3b;
+}
+
+.page-id-17 .menu a {
+	color: #3b3b3b;
+}
+
+
+#proyectos {
+	margin-top: 50px;
+}
+
 .contenedorabout {
-	max-width: 800px;
-	height: 400px;
+	height: 550px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 3px;
-	font-size: 15px;
+	font-size: 18px;
 	display:table; }
 
 .about {
@@ -893,21 +904,25 @@ a:hover, a:active {
 	letter-spacing: 3px;
 }
 
+
+
 .footer {
 	background-color: #3b3b3b;
+	font-family: 'Oswald', sans-serif;
 	min-height: 500px;
 	color: #ffffff;
-	font-family: 'Oswald', sans-serif;
 	letter-spacing: 3px;
-	line-height: 2.5;
 	padding-top: 80px;
 	font-size: 0.9em;
-
+	margin-top: 100px;
 }
 
 .titulo {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	letter-spacing: 3px;
+	line-height: 2.5;
 	text-transform: uppercase;
-		font-size: 1.2em;
 }
 
 .titulo::before {
@@ -918,6 +933,95 @@ a:hover, a:active {
 	background: #ffffff;
 	content: '';
 }
+
+.contenedoproyecto  {
+	padding: 50px 0px 30px 0px;
+}
+
+.grillaproyectos {
+	margin-bottom: 120px;
+
+}
+.h1proyecto {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #3b3b3b;
+}
+
+.h1proyecto::before {
+	position: absolute;
+	width: 15px;
+	height: 2px;
+	margin-top: -10px;
+	background: #3b3b3b;
+	content: '';
+}
+
+.h2proyecto {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+	color: #3b3b3b;
+}
+
+
+.proyppal {
+	margin-top: 150px;
+}
+
+.proysolo{
+	padding: 15px 0px;
+}
+
+.proyduo {
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.contenedorsomos {
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Oswald', sans-serif;
+	display:table;
+}
+
+.txtsomos {
+	vertical-align:middle;
+	display: table-cell;
+	text-align: justify;
+		letter-spacing: 2px;
+}
+
+.h1somos {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #3b3b3b;
+}
+
+.h1somos::before {
+	position: absolute;
+	width: 15px;
+	height: 2px;
+	margin-top: -10px;
+	background: #3b3b3b;
+	content: '';
+}
+
+.h2somos {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	color: #3b3b3b;
+}
+
 
 .footer a {
     color: #b7b7b7;
