@@ -904,8 +904,6 @@ a:hover, a:active {
 	letter-spacing: 3px;
 }
 
-
-
 .footer {
 	background-color: #3b3b3b;
 	font-family: 'Oswald', sans-serif;
@@ -968,10 +966,37 @@ a:hover, a:active {
 	color: #3b3b3b;
 }
 
+.h1logo {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	font-size: 0.9em;
+	letter-spacing: 3.5px;
+	text-transform: uppercase;
+	color: #3b3b3b;
+}
+
+.h1logo::before {
+	position: absolute;
+	width: 15px;
+	height: 2px;
+	margin-top: -10px;
+	background: #3b3b3b;
+	content: '';
+}
+
+.h2logo {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size: 0.9em;
+	letter-spacing: 3.5px;
+	color: #3b3b3b;
+}
 
 .proyppal {
 	margin-top: 150px;
 }
+
+
 
 .proysolo{
 	padding: 15px 0px;
@@ -1020,6 +1045,19 @@ a:hover, a:active {
 	font-size: 1.1em;
 	text-transform: uppercase;
 	color: #3b3b3b;
+}
+
+.productos {
+	margin-top: 150px;
+}
+
+.page-id-15 .menu a {
+	color: #3b3b3b;
+}
+
+.page-id-15 .menu a:hover {
+	color: #b7b7b7;
+	text-decoration: none;
 }
 
 

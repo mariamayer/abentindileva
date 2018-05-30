@@ -10,6 +10,7 @@ get_header(); ?>
           <div class="row">
             <img src="<?php echo get_template_directory_uri(); ?>/img/estudioabentin.jpg" class="mx-auto d-block proyppal" alt="Estudio Gaby Abentin">
           </div>
+
       </section>
 
       <section id="" class="container">
@@ -24,6 +25,8 @@ get_header(); ?>
                   </div>
               </div>
           </div>
+
+
         </div>
       </section>
 
