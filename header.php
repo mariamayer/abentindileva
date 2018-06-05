@@ -23,8 +23,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-<header id="masthead" class="site-header">
-    <nav class="navbar navbar-default fixed-top">
+<header id="masthead" class="site-header ">
+    <nav class="navbar navbar-default fixed-top mt-3">
         <div class="container-fluid">
             <div class="navbar-header">
                 <div class="h1logo">ESTUDIO</div>

@@ -840,17 +840,9 @@ a:hover, a:active {
 .menu {
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 3px;
+	font-weight: 300;
 	font-size: 0.8em;
 	text-transform: uppercase;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-    transition: transform(0.2s), transform(0.2s);
-    transition: transform(0.2s);
 }
 
 .home .menu a {
@@ -858,7 +850,7 @@ a:hover, a:active {
 }
 
 .home .menu a:hover {
-	color: #b7b7b7;
+	color: #b6b6b6;
 	text-decoration: none;
 }
 
@@ -909,7 +901,11 @@ a:hover, a:active {
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 3px;
-    color: #000;
+  color: #3b3b3b;
+}
+
+.nombreproyecto a:hover{
+  color: #b7b7b7;
 }
 
 .site-footer {
@@ -933,9 +929,9 @@ a:hover, a:active {
 
 .titulo::before {
 	position: absolute;
-	width: 15px;
+	width: 8px;
 	height: 2px;
-	margin-top: -10px;
+	margin-top: -6px;
 	background: #ffffff;
 	content: '';
 }
@@ -985,9 +981,9 @@ a:hover, a:active {
 
 .h1logo::before {
 	position: absolute;
-	width: 15px;
+	width: 5px;
 	height: 2px;
-	margin-top: -10px;
+	margin-top: -6px;
 	background: #3b3b3b;
 	content: '';
 }
@@ -1015,6 +1011,10 @@ a:hover, a:active {
 	padding-top: 15px;
 }
 
+.topestudio {
+	margin-top: 150px;
+}
+
 .contenedorsomos {
 	height: 550px;
 	margin-right: auto;
@@ -1027,7 +1027,7 @@ a:hover, a:active {
 	vertical-align:middle;
 	display: table-cell;
 	text-align: justify;
-		letter-spacing: 2px;
+		letter-spacing: 1.7px;
 }
 
 .h1somos {
@@ -1093,6 +1093,7 @@ a:hover, a:active {
     color: #ffffff;
 		text-decoration: underline dotted;
 }
+
 
 
 

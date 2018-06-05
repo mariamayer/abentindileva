@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<section class="hero" style="background:url(<?php echo get_theme_mod('estudio_img'); ?>)">
+<section class="hero topestudio" style="background:url(<?php echo get_theme_mod('estudio_img'); ?>)">
 
 </section>
 
