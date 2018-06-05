@@ -23,21 +23,20 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php the_custom_logo(); ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation container">
-			<div class="">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'abentindileva' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</div><!-- .menu -->
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+<header id="masthead" class="site-header">
+    <nav class="navbar navbar-default fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="h1logo">ESTUDIO</div>
+                <div class="h2logo font-weight-light">GABY ABENTIN <br> LARA DI LEVA</div>
+            </div>
+          <?php
+          wp_nav_menu( array(
+              'menu_class' => 'nav navbar-nav navbar-right menu',
+              'theme_location' => 'menu-1',
+              'menu_id'        => 'primary-menu',
+          ) );
+          ?>
+        </div>
+    </nav>
+</header>

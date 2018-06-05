@@ -124,8 +124,10 @@ function abentindileva_scripts() {
 
     wp_enqueue_style( 'abentindileva-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' );
 
-    wp_enqueue_script( 'abentindileva-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js', array(), '20151215', true );
-    
+    wp_enqueue_script( 'abentindileva-jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), '20151215', true );
+
+    wp_enqueue_script( 'abentindileva-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'abentindileva-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'abentindileva-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -162,3 +164,26 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function abentin_customize_register( $wp_customize ) {
+
+    $wp_customize->add_section('estudio' , array(
+	  'title' => __('Pagina Estudio','abentindileva'),
+	));
+
+    $wp_customize->add_setting('hero_img');
+    $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize,'hero_img',array(
+    'label'      => __('Hero Image', 'abentindileva'),
+    'section'    => 'static_front_page',
+    'settings'   => 'hero_img',
+    )));
+
+    $wp_customize->add_setting('estudio_img');
+    $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize,'estudio_img',array(
+    'label'      => __('Estudio Image', 'abentindileva'),
+    'section'    => 'estudio',
+    'settings'   => 'estudio_img',
+    )));
+
+}
+add_action( 'customize_register', 'abentin_customize_register' );

@@ -5,15 +5,12 @@
 
 get_header(); ?>
 
-<div class="container-fluid">
-      <section class="hero">
-          <div class="row">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/estudioabentin.jpg" class="mx-auto d-block proyppal" alt="Estudio Gaby Abentin">
-          </div>
+<section class="hero" style="background:url(<?php echo get_theme_mod('estudio_img'); ?>)">
 
-      </section>
+</section>
 
-      <section id="" class="container">
+<div class="container">
+      <section>
         <div class="contenedorsomos">
            <div class="txtsomos">
              <div class="h1somos"> Somos un estudio	</div>
@@ -25,11 +22,7 @@ get_header(); ?>
                   </div>
               </div>
           </div>
-
-
-        </div>
       </section>
-
-</div><!-- #container-fluid -->
+</div>
 
 <?php get_footer(); ?>

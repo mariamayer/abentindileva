@@ -838,14 +838,10 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 .menu {
-    position: fixed;
-    top: 10%;
-    right: 0;
-    z-index: 100;
-		font-family: 'Oswald', sans-serif;
-		letter-spacing: 3px;
-		font-size: 0.8em;
-		text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	font-size: 0.8em;
+	text-transform: uppercase;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -854,13 +850,14 @@ a:hover, a:active {
     -ms-transform: translateY(0px);
     transform: translateY(0px);
     transition: transform(0.2s), transform(0.2s);
-    transition: transform(0.2s);}
+    transition: transform(0.2s);
+}
 
-.menu a {
+.home .menu a {
 	color: #ffffff;
 }
 
-.menu a:hover {
+.home .menu a:hover {
 	color: #b7b7b7;
 	text-decoration: none;
 }
@@ -870,17 +867,27 @@ a:hover, a:active {
     margin-right: 30px;
 }
 
-.single .menu a {
+.menu a {
 	color: #3b3b3b;
 }
 
-.page-id-17 .menu a {
-	color: #3b3b3b;
+.hero {
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center center;
 }
 
 
 #proyectos {
-	margin-top: 50px;
+	margin: 50px 15px 0 15px;
+}
+
+#proyectos .img {
+	width: 100%;
+}
+
+#proyectos a {
+	text-decoration: none;
 }
 
 .contenedorabout {
@@ -902,9 +909,10 @@ a:hover, a:active {
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 3px;
+    color: #000;
 }
 
-.footer {
+.site-footer {
 	background-color: #3b3b3b;
 	font-family: 'Oswald', sans-serif;
 	min-height: 500px;
@@ -1047,26 +1055,41 @@ a:hover, a:active {
 	color: #3b3b3b;
 }
 
-.productos {
-	margin-top: 150px;
+#productos {
+	margin: 150px 15px 0 15px;
 }
 
-.page-id-15 .menu a {
-	color: #3b3b3b;
+#productos .img {
+	width: 100%;
 }
 
-.page-id-15 .menu a:hover {
+#productos a {
+	text-decoration: none;
+}
+
+.navbar-nav a:hover {
 	color: #b7b7b7;
 	text-decoration: none;
 }
 
+.navbar-nav ul li {
+    list-style: none;
+    display: inline-block;
+}
 
-.footer a {
+.navbar-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.site-footer a {
     color: #b7b7b7;
     text-decoration: none;
 }
 
-.footer a:hover {
+.site-footer a:hover {
     color: #ffffff;
 		text-decoration: underline dotted;
 }
