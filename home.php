@@ -5,7 +5,10 @@
 
 get_header(); ?>
 
-<section class="hero" style="background:url(<?php echo get_theme_mod('hero_img'); ?>)">
+<section class="hero">
+    <div class="row">
+      <img src="<?php echo get_theme_mod('hero_img'); ?>" class="mx-auto d-block" alt="Grande proyecto">
+    </div>
 </section>
 
 
@@ -26,9 +29,7 @@ get_header(); ?>
                     <a href="<?php echo get_the_permalink(); ?>">
                         <?php the_post_thumbnail(); ?>
                         <div class="descripcionproyecto">
-                            <div class="nombreproyecto">
-                                <?php echo get_the_title(); ?>
-                            </div>
+                            <h2 class="nombreproyecto"><?php echo get_the_title(); ?></h2>
                         </div>
                     </a>
                 </div>

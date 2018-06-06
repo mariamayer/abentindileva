@@ -863,10 +863,8 @@ a:hover, a:active {
 	color: #3b3b3b;
 }
 
-.hero {
-    height: 100vh;
-    background-size: cover !important;
-    background-position: center center;
+.hero img{
+    width: 100%;
 }
 
 
@@ -941,9 +939,13 @@ a:hover, a:active {
 }
 
 .grillaproyectos {
-	margin-bottom: 120px;
-
+	margin: 0 15px 120px 15px;
 }
+
+.grillaproyectos .padding {
+	padding: 30px 15px;
+}
+
 .h1proyecto {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;

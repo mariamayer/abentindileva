@@ -7,53 +7,42 @@
  * @package abentindileva
  */
 
+global $post;
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+<section class="hero">
+    <div class="row">
+      <img src="<?php echo get_post_meta(get_the_ID(),'custom_img',true); ?>" class="mx-auto d-block proyppal" alt="Grande proyecto">
+    </div>
+</section>
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				abentindileva_posted_on();
-				abentindileva_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+<section>
+    <div class="container-fluid">
+        <div class="col-md-12 contenedoproyecto">
+        <h1 class="h1proyecto"><?php echo get_the_title(); ?></h1>
+        <h2 class="h2proyecto"><?php echo get_the_excerpt(); ?></h2>
+        </div>
+    </div>
+</section>
 
-	<?php abentindileva_post_thumbnail(); ?>
+<section class="grillaproyectos">
+    <div class="container-fluid">
+        <div class="row">
+            <?php
+                $gallery = get_post_gallery_images( $post );
+                // Loop through each image in each gallery
+                foreach( $gallery as $key=>$image_url ) {
+                    if ($key==2){
+                        $class='col-md-12 padding';
+                    }else {
+                        $class='col-md-6';
+                    }
+                    echo '<div class="' . $class . '">' . '<img src="' . $image_url . '">' . '</div>';
+                }
+            ?>
+        </div>
+    </div>
+</section>
 
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'abentindileva' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'abentindileva' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php abentindileva_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</div>

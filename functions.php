@@ -128,7 +128,7 @@ function abentindileva_scripts() {
 
     wp_enqueue_script( 'abentindileva-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'abentindileva-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'abentindileva-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'abentindileva-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -137,6 +137,13 @@ function abentindileva_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'abentindileva_scripts' );
+
+function abentindileva_scripts_admin() {
+
+	wp_enqueue_script( 'abentindileva-main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
+
+}
+add_action( 'admin_enqueue_scripts', 'abentindileva_scripts_admin' );
 
 /**
  * Implement the Custom Header feature.
@@ -187,3 +194,59 @@ function abentin_customize_register( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'abentin_customize_register' );
+
+function add_fields_meta_box() {
+	add_meta_box(
+		'custom_fields', // $id
+		'Imagen de Portada', // $title
+		'show_custom_fields', // $callback
+		'post', // $screen
+		'normal', // $context
+		'high' // $priority
+	);
+}
+add_action( 'add_meta_boxes', 'add_fields_meta_box' );
+
+function show_custom_fields() {
+	global $post;
+	$meta = get_post_meta( $post->ID, 'custom_img', true ); ?>
+
+	<input type="hidden" name="img_nonce" value="<?php echo wp_create_nonce( basename(__FILE__) ); ?>">
+
+    <p>
+    	<label for="custom_img">Subir Imagen</label><br>
+    	<input type="text" name="custom_img" id="custom_img" class="meta-image regular-text" value="<?php echo $meta; ?>">
+    	<input type="button" class="button image-upload" value="Browse">
+    </p>
+    <div class="image-preview"><img src="<?php echo $meta; ?>" style="max-width: 250px;"></div>
+
+<?php }
+
+function save_fields_meta( $post_id ) {
+	// verify nonce
+	if ( !wp_verify_nonce( $_POST['img_nonce'], basename(__FILE__) ) ) {
+		return $post_id;
+	}
+	// check autosave
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return $post_id;
+	}
+	// check permissions
+	if ( 'page' === $_POST['post_type'] ) {
+		if ( !current_user_can( 'edit_page', $post_id ) ) {
+			return $post_id;
+		} elseif ( !current_user_can( 'edit_post', $post_id ) ) {
+			return $post_id;
+		}
+	}
+
+	$old = get_post_meta( $post_id, 'custom_img', true );
+	$new = $_POST['custom_img'];
+
+	if ( $new && $new !== $old ) {
+		update_post_meta( $post_id, 'custom_img', $new );
+	} elseif ( '' === $new && $old ) {
+		delete_post_meta( $post_id, 'custom_img', $old );
+	}
+}
+add_action( 'save_post', 'save_fields_meta' );

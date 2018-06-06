@@ -5,8 +5,10 @@
 
 get_header(); ?>
 
-<section class="hero topestudio" style="background:url(<?php echo get_theme_mod('estudio_img'); ?>)">
-
+<section class="hero topestudio">
+    <div class="row">
+      <img src="<?php echo get_theme_mod('estudio_img'); ?>" class="mx-auto d-block" alt="Grande proyecto">
+    </div>
 </section>
 
 <div class="container">
