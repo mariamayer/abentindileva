@@ -859,7 +859,7 @@ a:hover, a:active {
     margin-right: 30px;
 }
 
-.menu a {
+.menu a, #page .scroll-header .menu a {
 	color: #3b3b3b;
 }
 
@@ -1085,7 +1085,15 @@ a:hover, a:active {
     list-style: none;
 }
 
+.navbar-nav {
+    -webkit-transition: all 1s ease; /* Safari */
+    transition: all 1s ease;
+}
 
+.scroll-header {
+    background: #fff;
+    padding: 0 1rem !important;
+}
 .site-footer a {
     color: #b7b7b7;
     text-decoration: none;
