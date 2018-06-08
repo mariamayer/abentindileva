@@ -843,13 +843,14 @@ a:hover, a:active {
 	font-weight: 300;
 	font-size: 0.8em;
 	text-transform: uppercase;
+	flex-direction: row;
 }
 
 .home .menu a {
 	color: #ffffff;
 }
 
-.home .menu a:hover {
+.menu a:hover {
 	color: #b6b6b6;
 	text-decoration: none;
 }
@@ -900,6 +901,7 @@ a:hover, a:active {
 	font-weight: 300;
 	letter-spacing: 3px;
   color: #3b3b3b;
+	font-size: 1em;
 }
 
 .nombreproyecto a:hover{
@@ -978,7 +980,7 @@ a:hover, a:active {
 	font-size: 0.9em;
 	letter-spacing: 3.5px;
 	text-transform: uppercase;
-	color: #3b3b3b;
+	color: #ffffff;
 }
 
 .h1logo::before {
@@ -986,7 +988,7 @@ a:hover, a:active {
 	width: 5px;
 	height: 2px;
 	margin-top: -6px;
-	background: #3b3b3b;
+	background: #ffffff;
 	content: '';
 }
 
@@ -995,8 +997,18 @@ a:hover, a:active {
 	font-weight: 200;
 	font-size: 0.9em;
 	letter-spacing: 3.5px;
+	color: #ffffff;
+}
+
+#page .scroll-header .h2logo {
 	color: #3b3b3b;
 }
+
+#page .scroll-header .h1logo {
+	color: #3b3b3b;
+}
+
+
 
 .proyppal {
 	margin-top: 150px;
@@ -1091,8 +1103,9 @@ a:hover, a:active {
 }
 
 .scroll-header {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
     padding: 0 1rem !important;
+		margin-top: -1rem;
 }
 .site-footer a {
     color: #b7b7b7;
