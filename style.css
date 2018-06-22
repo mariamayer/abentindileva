@@ -980,7 +980,7 @@ a:hover, a:active {
 	font-size: 0.9em;
 	letter-spacing: 3.5px;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #3b3b3b;
 }
 
 .h1logo::before {
@@ -988,7 +988,7 @@ a:hover, a:active {
 	width: 5px;
 	height: 2px;
 	margin-top: -6px;
-	background: #ffffff;
+	background: #3b3b3b;
 	content: '';
 }
 
@@ -997,6 +997,18 @@ a:hover, a:active {
 	font-weight: 200;
 	font-size: 0.9em;
 	letter-spacing: 3.5px;
+	color: #3b3b3b;
+}
+
+.home .h1logo {
+	color: #ffffff;
+}
+
+.home .h1logo::before {
+	background: #ffffff;
+}
+
+.home .h2logo {
 	color: #ffffff;
 }
 
@@ -1107,6 +1119,14 @@ a:hover, a:active {
     padding: 0 1rem !important;
 		margin-top: -1rem;
 }
+
+:target:before {
+content:"";
+display:block;
+height:90px; /* fixed header height*/
+margin:-150px 0 0; /* negative fixed header height */
+}
+
 .site-footer a {
     color: #b7b7b7;
     text-decoration: none;

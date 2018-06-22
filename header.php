@@ -25,11 +25,12 @@
 <div id="page" class="site">
 <header id="masthead" class="site-header ">
     <nav class="navbar navbar-default fixed-top pt-3">
-        <div class="container-fluid">
+        <div class="container-fluid " >
             <div class="navbar-header">
                 <div class="h1logo">ESTUDIO</div>
                 <div class="h2logo font-weight-light">GABY ABENTIN <br> LARA DI LEVA</div>
             </div>
+			
           <?php
           wp_nav_menu( array(
               'menu_class' => 'nav navbar-right menu',

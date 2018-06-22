@@ -7,7 +7,7 @@ get_header(); ?>
 
 <section class="hero">
     <div class="row">
-      <img src="<?php echo get_theme_mod('hero_img'); ?>" class="mx-auto d-block" alt="Grande proyecto">
+      <img src="<?php echo get_theme_mod('hero_img'); ?>" class="mx-auto d-block" >
     </div>
 </section>
 
