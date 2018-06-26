@@ -33,7 +33,6 @@ jQuery(document).ready(function ($) {
     });
 
     $(window).scroll(function() {
-        console.log('hola');
         var scroll = $(window).scrollTop();
         if (scroll >= 100) {
             $(".navbar-default").addClass("scroll-header");
@@ -41,4 +40,10 @@ jQuery(document).ready(function ($) {
             $(".navbar-default").removeClass("scroll-header");
         }
     });
+
+    if(window.location.href.indexOf("proyectos") > -1) {
+        scrollToAnchor = $('#proyectos').offset().top;
+        $('html, body').animate({ scrollTop : scrollToAnchor }, 1000 );
+	}
+
 });

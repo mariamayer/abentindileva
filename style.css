@@ -846,6 +846,12 @@ a:hover, a:active {
 	flex-direction: row;
 }
 
+.menu ul {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
 .home .menu a {
 	color: #ffffff;
 }
@@ -855,9 +861,9 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-.menu-item {
-    float: left;
-    margin-right: 30px;
+.menu-item, .page_item {
+    display: inline-block;
+    margin-left: 30px;
 }
 
 .menu a, #page .scroll-header .menu a {
@@ -866,6 +872,7 @@ a:hover, a:active {
 
 .hero img{
     width: 100%;
+    height: auto;
 }
 
 
@@ -1109,9 +1116,11 @@ a:hover, a:active {
     list-style: none;
 }
 
-.navbar-nav {
-    -webkit-transition: all 1s ease; /* Safari */
-    transition: all 1s ease;
+.navbar {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .scroll-header {
@@ -1286,4 +1295,11 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+@media screen
+and (max-width : 760px) {
+    .mobile-padding{
+        padding: 30px 0;
+    }
 }

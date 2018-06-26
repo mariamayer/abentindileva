@@ -23,21 +23,24 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-<header id="masthead" class="site-header ">
-    <nav class="navbar navbar-default fixed-top pt-3">
-        <div class="container-fluid " >
+<header id="masthead" class="site-header">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light fixed-top pt-3">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <div class="h1logo">ESTUDIO</div>
                 <div class="h2logo font-weight-light">GABY ABENTIN <br> LARA DI LEVA</div>
             </div>
-			
-          <?php
-          wp_nav_menu( array(
-              'menu_class' => 'nav navbar-right menu',
-              'theme_location' => 'menu-1',
-              'menu_id'        => 'primary-menu',
-          ) );
-          ?>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <?php
+                  wp_nav_menu( array(
+                      'menu_class' => 'nav navbar-right menu collapse navbar-collapse',
+                      'theme_location' => 'menu-1',
+                      'menu_id'        => 'nav',
+                  ) );
+                ?>
+
         </div>
     </nav>
 </header>

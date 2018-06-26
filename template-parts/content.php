@@ -12,9 +12,7 @@ global $post;
 ?>
 
 <section class="hero">
-    <div class="row">
-      <img src="<?php echo get_post_meta(get_the_ID(),'custom_img',true); ?>" class="mx-auto d-block proyppal" alt="Grande proyecto">
-    </div>
+    <img src="<?php echo get_post_meta(get_the_ID(),'custom_img',true); ?>" class="mx-auto d-block proyppal" alt="Grande proyecto">
 </section>
 
 <section>
@@ -36,7 +34,7 @@ global $post;
                     if ($key==2){
                         $class='col-md-12 padding';
                     }else {
-                        $class='col-md-6';
+                        $class='col-md-6 mobile-padding';
                     }
                     echo '<div class="' . $class . '">' . '<img src="' . $image_url . '">' . '</div>';
                 }
