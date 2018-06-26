@@ -12,7 +12,7 @@ global $post;
 ?>
 
 <section class="hero">
-    <img src="<?php echo get_post_meta(get_the_ID(),'custom_img',true); ?>" class="mx-auto d-block proyppal" alt="Grande proyecto">
+    <img src="<?php echo get_post_meta(get_the_ID(),'custom_img',true); ?>" class="mx-auto d-block proyppal">
 </section>
 
 <section>

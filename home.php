@@ -13,7 +13,8 @@ get_header(); ?>
 <section id="txtestudio">
     <div class="container">
         <div class="contenedorabout">
-           <p class="font-weight-light text-justify about"> - <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum velit ut venenatis lobortis. Pellentesque convallis erat eu tortor porttitor dapibus. Sed fringilla augue eu sagit- tis egestas. Proin egestas nunc sed fringilla rhoncus. Vestibulum ullamcorper sed velit et commodo. Praesent vitae ligula aliquam nisl dapibus dictum vel et lectus. Proin velit erat, dapibus at dui sed, rutrum tincidunt dolor. Donec aliquet odio at sapien bibendum hendrerit. Donec a tincidunt nunc. Aliquam erat volutpat. </p>
+           <p class="font-weight-light text-justify about"> - <br>Le damos marco a la experiencia. Creamos entornos con sentido. Encontramos  la identidad a los espacios teniendo en cuenta el espíritu y las necesidades de quienes nos convocan. <br>
+             Nuestro alcance es de lo macro a lo micro, desde la arquitectura al interiorismo, desde el diseño y produccion de mobiliario a la iluminación, los textiles, accesorios y mínimos detalles.  </p>
        </div>
     </div>
 </section>

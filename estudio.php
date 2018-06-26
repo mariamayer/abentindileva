@@ -16,10 +16,12 @@ get_header(); ?>
              <div class="h1somos"> Somos un estudio	</div>
              <div class="h2somos">Somos diseñadoras</div>
                 <div class="row font-weight-light mt-5">
-                  <div class="col-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum velit ut venenatis lobortis.  Proin egestas nunc sed fringilla rhoncus. Vestibulum ullamcorper sed velit et commodo. Praesent vitae ligula aliquam nisl dapibus dictum vel et lectus. Proin velit erat, dapibus at dui sed, rutrum tincidunt dolor. Donec aliquet odio at sapien bibendum hendrerit. Aliquam erat volutpat.
+                  <div class="col-sm">Gaby Abentin es diseñadora, con formación en Las Bellas Artes.
+                    Durante diez años fue diseñadora gráfica y hace 20 años realiza proyectos de interiorismo. <br>
+                    Comenzo a trabajar hace 10 años con Lara di Leva, diseñadora industrial, hasta más tarde asociarse. <br>
+                    Juntas congregan un equipo multidiciplinario de arquitectos, diseñadores industriales y gráficos, productores y constructoras.
                   </div>
-                  <div class="col-sm">Nulla condimentum velit ut venenatis lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis erat eu tortor porttitor dapibus. Sed fringilla augue eu sagit- tis egestas. Proin velit erat, dapibus at dui sed, rutrum tincidunt dolor. Donec aliquet odio at sapien bibendum hendrerit. Donec a tincidunt nunc.
-                  </div>
+
               </div>
           </div>
       </section>
