@@ -843,7 +843,6 @@ a:hover, a:active {
 	font-weight: 300;
 	font-size: 0.8em;
 	text-transform: uppercase;
-	flex-direction: row;
 }
 
 .menu ul {
@@ -874,6 +873,7 @@ a:hover, a:active {
     width: 100%;
     height: auto;
 }
+
 
 
 #proyectos {

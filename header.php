@@ -30,7 +30,7 @@
                 <div class="h1logo">ESTUDIO</div>
                 <div class="h2logo font-weight-light">GABY ABENTIN <br> LARA DI LEVA</div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
                 <?php
