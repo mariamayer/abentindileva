@@ -888,6 +888,23 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+.navegador {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+	font-size: 1em;
+	display:table;
+	margin: auto;}
+
+.navegador a{
+	 color: #3b3b3b;
+}
+
+.navegador a:hover{
+	 color: #b7b7b7;
+	text-decoration: none;
+}
+
 .contenedorabout {
 	height: 550px;
 	margin-right: auto;
