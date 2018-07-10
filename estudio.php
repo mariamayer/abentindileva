@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <section class="hero topestudio">
-    <img src="<?php echo get_theme_mod('estudio_img'); ?>" class="mx-auto d-block" alt="Grande proyecto">
+    <img src="<?php echo get_theme_mod('estudio_img'); ?>" class="mx-auto d-block">
 </section>
 
 <div class="container">

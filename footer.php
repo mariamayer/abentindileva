@@ -21,8 +21,8 @@
                 f/ <a href="https://www.facebook.com/pg/estudiogabyabentin/" target="_blank">estudio gabyabentin</a><br>
                 ig/ <a href="https://www.instagram.com/estudiogabyabentin/" target="_blank">estudiogabyabentin</a><br><br>
                 Buenos Aires, Argentina.
-								<span class="float-right d-none d-sm-block">Diseño: Cooperativa de Diseño</span>
-								<span class="float-left d-block d-sm-none mt-5">Diseño: Cooperativa de Diseño</span><br>
+								<span class="float-right d-none d-sm-block">Diseño: <a href="http://www.cooperativadedisenio.com/" target="_blank">Cooperativa de Diseño</a></span>
+								<span class="float-left d-block d-sm-none mt-5">Diseño: <a href="http://www.cooperativadedisenio.com/" target="_blank">Cooperativa de Diseño</a></span><br>
 
 						</p>
         </div>

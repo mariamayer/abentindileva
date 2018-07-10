@@ -20,11 +20,11 @@ get_header();
 	endwhile; // End of the loop.
 	?>
  	<div class="navegador">
+		
 
-
-
+		
 	<?php previous_post_link('%link', '<<', TRUE, '7'); ?> &nbsp;&nbsp; - &nbsp;&nbsp;<?php next_post_link('%link', '>>', TRUE, '7'); ?>
-
+		
 	</div>
 <?php
 get_footer();

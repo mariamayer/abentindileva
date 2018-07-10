@@ -893,7 +893,7 @@ a:hover, a:active {
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 2px;
 	font-size: 1em;
-	display:table;
+	display:table; 
 	margin: auto;}
 
 .navegador a{
@@ -1141,7 +1141,7 @@ a:hover, a:active {
 }
 
 .scroll-header {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     padding: 0 1rem !important;
 		margin-top: -1rem;
 }
@@ -1317,6 +1317,19 @@ object {
 @media screen
 and (max-width : 760px) {
     .mobile-padding{
-        padding: 30px 0;
+    padding: 30px 0;
     }
+	
+
+	.nav {
+	display: block;
+	flex-direction: column;
+	}
+
+	.menu-item {
+	display: block;
+	float: none;
+	margin-left: 5px;
+	margin-top: 5px;
+	}
 }

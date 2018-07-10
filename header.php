@@ -24,7 +24,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 <header id="masthead" class="site-header">
-    <nav class="navbar navbar-default navbar-expand-lg navbar-light fixed-top pt-3">
+    <nav class="navbar navbar-default navbar-expand-md navbar-light fixed-top pt-3">
         <div class="container-fluid">
             <div class="navbar-header">
                 <div class="h1logo">ESTUDIO</div>
