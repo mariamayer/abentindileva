@@ -31,7 +31,7 @@ global $post;
                 $gallery = get_post_gallery_images( $post );
                 // Loop through each image in each gallery
                 foreach( $gallery as $key=>$image_url ) {
-                    if ($key==2){
+                    if ($key==2 || $key==5 || $key==8){
                         $class='col-md-12 padding';
                     }else {
                         $class='col-md-6 mobile-padding';

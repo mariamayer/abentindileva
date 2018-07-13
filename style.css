@@ -968,6 +968,10 @@ a:hover, a:active {
 	margin: 0 15px 120px 15px;
 }
 
+.grillaproyectos img {
+    width: 100%;
+}
+
 .grillaproyectos .padding {
 	padding: 30px 15px;
 }
